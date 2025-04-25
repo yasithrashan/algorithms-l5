@@ -4,14 +4,18 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void sort(int[] values) {
+
         int lastUnsorted= values.length-1;;
 
         while(lastUnsorted >= 0) {
             int maxIndex=0;
             int maxValue=values[0];
 
-            for(int i=1;i<lastUnsorted;i++) {
+            // For Loop for find max value
+            for(int i=1;i<=lastUnsorted;i++) {
                 if(values[i]>maxValue) {
+
+
                     maxIndex=i;
                     maxValue=values[i];
                 }
